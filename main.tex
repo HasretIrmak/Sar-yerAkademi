@@ -1,0 +1,61 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Transformer Tabanlı Modeller Literatür Taraması}
+\author{Hasret Irmak BARAN}
+
+\begin{document}
+\maketitle
+
+
+
+\section{Introduction}
+
+\textbf{TRANSFORMER TABANLI MODELLER NEDİR?}
+
+Günümüz yapay zeka sistemlerinin temelini oluşturan Transformer tabanlı modeller, özellikle doğal dil işleme (NLP) ve bilgisayarlı görü (CV) alanlarında büyük bir devrim yaratmıştır. 2017 yılında Google tarafından önerilen Transformer mimarisi, geleneksel RNN ve LSTM gibi sıralı işlem gerektiren modellere kıyasla self-attention mekanizması sayesinde daha hızlı ve verimli çalışmaktadır. Bu mimariyi temel alan BERT, GPT, T5, XLNet, ViT gibi modeller, metin anlama, üretme, çeviri, özetleme ve görüntü işleme gibi birçok farklı alanda üstün performans sergilemektedir. Özellikle ChatGPT, Google Bard, Meta Llama gibi gelişmiş yapay zeka uygulamaları, Transformer modellerinin gücünden yararlanarak insan benzeri metinler üretebilmekte ve karmaşık görevleri başarıyla yerine getirebilmektedir.
+
+Bu çalışma kapsamında, Transformer tabanlı modeller üzerine yapılan literatür taramaları sunulacaktır. İlk olarak, Transformer mimarisinin temel bileşenleri ve avantajları ele alınacaktır. Daha sonra, literatürde öne çıkan çalışmalar üzerinden Transformer modellerinin NLP ve bilgisayarlı görü alanlarındaki kullanımları detaylandırılacaktır.
+
+\section{LİTERATÜRDEKİ ÇALIŞMALAR}
+
+\subsection{TRANSFORMATÖR-TABANLI EVRİŞİMLİ SİNİR AĞI MODELİ KULLANARAK TWITTER 
+VERİSİNDE SALDIRGANLIK TESPİTİ}
+
+Erdal Özbay’ın "Transformatör-Tabanlı Evrişimli Sinir Ağı Modeli Kullanarak Twitter Verisinde Saldırganlık Tespiti"\cite{ozbay2022aggression} başlıklı çalışması, sosyal medya platformlarında giderek artan nefret söylemi ve siber zorbalık gibi olumsuz içeriklerin tespiti için yenilikçi bir yaklaşım sunmaktadır. Çalışmada, saldırgan içeriklerin otomatik olarak belirlenmesi amacıyla Transformer tabanlı bir kodlayıcı olan LMTweets geliştirilmiş ve bu kodlayıcıdan elde edilen öznitelikler, Evrişimli Sinir Ağı (CNN) ile sınıflandırılmıştır. LMTweets, özellikle Twitter verilerine özgü bir metin kodlayıcısı olarak tasarlanmış olup, metinleri sayısal değerlere dönüştürerek saldırganlık tespiti için gerekli olan öznitelikleri çıkarmaktadır. Bu süreçte çıkarılan öznitelikler CNN modeliyle işlenerek metinlerin **saldırgan veya saldırgan olmayan** olarak sınıflandırılması sağlanmıştır.  
+
+Çalışmanın deneysel analizleri, modelin Cyber-Trolls veri seti üzerinde test edilmesiyle gerçekleştirilmiştir. Sonuçlar, önerilen modelin \%96 doğruluk, \%91 kesinlik, \%96 duyarlılık, \%93 F1 puanı ve \%96 AUC (Eğri Altındaki Alan) değerlerine ulaştığını göstermektedir. Elde edilen bu yüksek başarı oranları, modelin saldırgan içerikleri tespit etme konusunda oldukça etkili olduğunu ortaya koymaktadır. Ayrıca, çalışmada önerilen modelin performansı, Naïve Bayes, Destek Vektör Makineleri (SVM), K-En Yakın Komşu (KNN), LSTM, GRU, BERT, XLNet ve ULMFiT gibi yaygın makine öğrenmesi ve derin öğrenme modelleriyle karşılaştırılmıştır. Yapılan karşılaştırmalar sonucunda, önerilen modelin diğer yöntemlere kıyasla daha yüksek doğruluk ve genel performans sunduğu belirlenmiştir.  
+
+Bu çalışma, özellikle sosyal medya platformlarındaki nefret söylemi ve saldırgan içeriklerin otomatik tespitine yönelik önemli bir katkı sunmaktadır. Transformer tabanlı kodlama ve CNN modelinin birleşimi, dilin bağlamsal anlamını daha iyi kavrayarak metinlerin daha hassas ve güvenilir bir şekilde sınıflandırılmasını sağlamaktadır. Bu doğrultuda, çalışma gelecekte yapılacak araştırmalara ve sosyal medya platformlarının içerik denetleme politikalarına önemli bir referans oluşturabilecek niteliktedir.
+
+\subsection{ Comprehensive Review of Transformer-based models in
+ neuroscience, neurology and psychiatry}
+
+Bu çalışmada\cite{cong2024transformer}, derin öğrenme alanındaki Transformer tabanlı modellerin, nörobilim, nöroloji ve psikiyatri gibi geniş kapsamlı beyin bilimi alanlarındaki kullanımları detaylı bir şekilde ele alınmaktadır. Özellikle bu modellerin, sinirsel işlevleri ve bozuklukları anlamada sunduğu yenilikçi yöntemlerle geleneksel hesaplama yöntemlerinden belirgin bir şekilde ayrıştığı vurgulanmıştır. Transformer mimarisinin kendine özgü özelliği olan dikkat mekanizmalarının (self-attention) yardımıyla, karmaşık uzamsal-zamansal ilişkileri ve uzun menzilli bağımlılıkları yakalamadaki üstün yetenekleri, biyomedikal verilerin analizinde oldukça etkili bulunmuştur. Bu derlemede, Transformers modellerinin yapı taşları ve temel prensipleri tanıtılmış; bu modellerin hastalık teşhisi, tedavi sonuçlarının tahmini, bilişsel süreçlerin değerlendirilmesi ve sinirsel kod çözme gibi geniş bir yelpazedeki uygulamaları incelenmiştir. Ayrıca, bu uygulamalara yönelik olarak modellerde yapılan özel tasarım değişiklikleri ve bu değişimlerin performans üzerindeki etkileri derinlemesine tartışılmıştır. Çalışma, mevcut ilerlemeleri, bu alanlardaki devam eden zorlukları ve potansiyel araştırma yönelimlerini kapsamlı bir şekilde değerlendirmiş; büyük ölçekli önceden eğitilmiş modellerin bilimsel araştırmalardaki önemini ve klinik uygulamalardaki dönüşüm gücünü gözler önüne sermiştir. Bu bağlamda, Transformer tabanlı modellerin, nörobilimsel araştırmalar ve klinik uygulamalar için yapay zeka merkezli bir paradigma değişimini nasıl teşvik ettiği de vurgulanmıştır.
+
+\section{SONUÇ}
+
+Transformer tabanlı modeller, derin öğrenme alanında devrim niteliğinde bir gelişme olarak, çeşitli disiplinlerde geniş bir uygulama alanı bulmuştur. Bu çalışma, özellikle doğal dil işleme, bilgisayarlı görü, sosyal medya içerik analizi ve nörobilim gibi alanlarda, Transformer modellerinin benzersiz yeteneklerini vurgulamaktadır. Gerek Twitter gibi sosyal medya platformlarında saldırganlık tespiti gerekse nörobilim ve nöroloji gibi karmaşık verilerin analizinde bu modellerin başarılı olduğu açıkça görülmüştür.
+
+Transformer modellerinin özellikle self-attention mekanizması sayesinde bağlamsal ilişkileri ve uzun menzilli bağımlılıkları etkili bir şekilde işleyebilmesi, onları geleneksel modellerden ayıran temel bir özelliktir. LMTweets + CNN gibi modellerin, sosyal medya içeriklerinde saldırganlık tespiti için sunduğu hassasiyet ve doğruluk, bu modellerin pratik kullanımlarını göstermektedir. Benzer şekilde, nörobilimsel araştırmalar için tasarlanmış Transformer tabanlı uygulamaların, insan beyninin karmaşık dinamiklerini çözümlemekteki başarısı, bu modellerin biyomedikal alandaki potansiyelini gözler önüne sermektedir.
+
+Ancak, Transformer modellerinin geniş çaplı uygulanabilirliğiyle birlikte, eğitim maliyetleri, büyük veri ihtiyacı ve model yorumlanabilirliği gibi bazı zorluklar da bulunmaktadır. Gelecekteki araştırmalar, daha verimli modeller geliştirmeye, kaynak gereksinimlerini azaltmaya ve bu modellerin açıklanabilirliğini artırmaya odaklanmalıdır.
+
+Sonuç olarak, Transformer tabanlı modeller, derin öğrenme teknolojilerinde yeni bir paradigma oluşturarak, bilimsel araştırmalara ve uygulamalara önemli katkılar sunmaktadır. Bu modellerin hem teorik hem de uygulamalı alanlarda sunduğu yenilikçi yaklaşımlar, yapay zeka odaklı teknolojilerin gelecekteki gelişimine yön verecek kritik unsurlar olarak öne çıkmaktadır. 
+
+\bibliographystyle{alpha}
+\bibliography{sample}
+
+\end{document}
